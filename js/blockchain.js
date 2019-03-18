@@ -66,25 +66,5 @@ class blockchain {
   }
 }
 
-let antonCoin = new blockchain();
-
-console.log('Mining block 1...');
-antonCoin.addBlock(new block(1, "17/03/2019", { amount: 4}));
-
-console.log('Mining block 2...');
-antonCoin.addBlock(new block(2, "18/03/2019", { amount: 10}));
-
-
-/*
-console.log(JSON.stringify(antonCoin, null, 4));
-
-console.log('Is blockchain valid? ' + antonCoin.isChainValid());
-
-antonCoin.chain[1].data = {amount: 100};
-antonCoin.chain[1].hash = antonCoin.chain[1].calculateHash();
-
-console.log('Is blockchain valid? ' + antonCoin.isChainValid());
-
-console.log(JSON.stringify(antonCoin, null, 4));
-
-*/
+module.exports.blockchain = Blockchain;
+module.exports.
